@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPageController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="430.0" layoutX="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@juju.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn" layoutX="500.0" layoutY="182.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="77.0" text="轉換" />
+      <TextArea fx:id="upT" layoutX="171.0" layoutY="126.0" prefHeight="50.0" prefWidth="258.0" />
+      <TextArea fx:id="downT" layoutX="171.0" layoutY="221.0" prefHeight="50.0" prefWidth="258.0" />
+      <RadioButton fx:id="upRB" layoutX="7.0" layoutY="174.0" mnemonicParsing="false" selected="true" text="英文轉摩斯">
+         <toggleGroup>
+            <ToggleGroup fx:id="radio" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="downRB" layoutX="7.0" layoutY="213.0" mnemonicParsing="false" text="摩斯轉英文" toggleGroup="$radio" />
+   </children>
+</AnchorPane>
